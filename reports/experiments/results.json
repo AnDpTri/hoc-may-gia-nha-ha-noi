@@ -1,0 +1,58 @@
+{
+  "selected_model": "Lasso_tuned",
+  "selected_flags": {
+    "engineered": false,
+    "clipping": true,
+    "log_areas": false
+  },
+  "best_params": {
+    "Ridge_tuned": {
+      "alpha": 10.0
+    },
+    "Lasso_tuned": {
+      "alpha": 0.0003
+    },
+    "ElasticNet_tuned": {
+      "alpha": 0.0003,
+      "l1_ratio": 0.9
+    },
+    "HistGradientBoosting": {
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15
+    }
+  },
+  "selected_cv": {
+    "model": "Lasso_tuned",
+    "cv_rmse_log_mean": 0.12718794218082302,
+    "cv_rmse_log_std": 0.00976949988672381,
+    "cv_train_rmse_log_mean": 0.08758552129769846,
+    "cv_mae_usd_mean": 14447.917365988482,
+    "cv_rmse_usd_mean": 26471.060950495652,
+    "cv_r2_usd_mean": 0.8853241898663354,
+    "fit_seconds_mean": 0.27435186665388756
+  },
+  "test_metrics": {
+    "fit_full_seconds": 0.562137700006133,
+    "train_rmse_log": 0.10182563673260081,
+    "train_mae_usd": 12267.782915786773,
+    "train_rmse_usd": 19493.77684681068,
+    "train_r2_usd": 0.9413433578445113,
+    "rmse_log": 0.15095392456295836,
+    "mae_usd": 14840.276898088196,
+    "rmse_usd": 21218.728642400758,
+    "r2_usd": 0.918928046455907
+  },
+  "test_rmse_log_improvement_vs_dummy_pct": 63.88204996379143,
+  "selection_sha256": "66603cb8bcf7729f7b1331bc1c12ed940a9d81c33b984ca05e2ea3b12741e08f",
+  "n_train": 2589,
+  "n_test": 341,
+  "seed": 42,
+  "supplementary_cv": {
+    "preprocessing_fit_year": 2006,
+    "calibration_rows": 625,
+    "ridgecv_alpha": 30.0,
+    "lassocv_alpha": 0.0003,
+    "note": "Minh họa đúng lớp RidgeCV/LassoCV với preprocessing đóng băng năm 2006; không thay thế CV refit pipeline chính."
+  },
+  "warning": "CV dùng chọn cấu hình nên hơi lạc quan; test giữ lại là đánh giá cuối. Không chọn lại theo test."
+}

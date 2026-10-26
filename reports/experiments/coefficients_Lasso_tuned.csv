@@ -1,0 +1,351 @@
+feature,coefficient_log_price,abs_coefficient
+cat__Roof Matl_ClyTile,-0.47004737004400804,0.47004737004400804
+cat__Exter Cond_Po,-0.3408119743815481,0.3408119743815481
+cat__Functional_Sal,-0.3369777532116953,0.3369777532116953
+num__Gr Liv Area,0.1258337413243152,0.1258337413243152
+cat__MS Zoning_C (all),-0.10267318689656689,0.10267318689656689
+cat__Neighborhood_GrnHill,0.08750854826938352,0.08750854826938352
+cat__Neighborhood_Crawfor,0.08240562171909266,0.08240562171909266
+cat__Functional_Typ,0.08025685196537612,0.08025685196537612
+num__Overall Qual,0.07976435117000706,0.07976435117000706
+cat__Heating QC_Po,-0.07491058291456651,0.07491058291456651
+cat__Exterior 1st_BrkFace,0.0673903101599898,0.0673903101599898
+cat__Neighborhood_Somerst,0.06580530981874438,0.06580530981874438
+cat__MS SubClass_160,-0.064070921966917,0.064070921966917
+cat__Neighborhood_MeadowV,-0.06306427839725848,0.06306427839725848
+cat__Neighborhood_StoneBr,0.06215896463233222,0.06215896463233222
+num__Year Built,0.05640146389895068,0.05640146389895068
+cat__Neighborhood_NridgHt,0.05416196710639546,0.05416196710639546
+num__Overall Cond,0.04920247318259221,0.04920247318259221
+num__Total Bsmt SF,0.04898945619059901,0.04898945619059901
+cat__Bsmt Exposure_Gd,0.044441020454782904,0.044441020454782904
+cat__Kitchen Qual_Ex,0.03809440563098594,0.03809440563098594
+cat__MS SubClass_030,-0.03674338727449049,0.03674338727449049
+cat__Condition 1_Norm,0.034631034710139466,0.034631034710139466
+cat__Central Air_N,-0.03445458701637224,0.03445458701637224
+cat__Neighborhood_NoRidge,0.034157065466212465,0.034157065466212465
+cat__MS Zoning_RL,0.033431361413835854,0.033431361413835854
+cat__Bldg Type_Twnhs,-0.031935885986879055,0.031935885986879055
+cat__Functional_Min2,0.03141519877854305,0.03141519877854305
+cat__Roof Matl_WdShngl,0.030998053367821646,0.030998053367821646
+cat__Bsmt Qual_Ex,0.030257427315506916,0.030257427315506916
+cat__Neighborhood_Edwards,-0.030011738373430984,0.030011738373430984
+cat__Heating QC_Ex,0.03001100300112223,0.03001100300112223
+cat__Functional_Min1,0.02984352135990497,0.02984352135990497
+cat__MS SubClass_090,-0.029396962668815654,0.029396962668815654
+cat__Garage Type_CarPort,-0.028302743128790095,0.028302743128790095
+cat__MS Zoning_FV,0.026519949972079716,0.026519949972079716
+cat__Condition 1_PosA,0.02569042911541192,0.02569042911541192
+cat__Lot Config_CulDSac,0.025606137885104966,0.025606137885104966
+cat__Lot Shape_IR3,-0.025469387032266068,0.025469387032266068
+cat__Neighborhood_NWAmes,-0.024661774709016555,0.024661774709016555
+cat__Exter Cond_TA,0.024619072085345393,0.024619072085345393
+cat__Functional_Maj2,-0.024067842622063775,0.024067842622063775
+cat__Garage Cond_TA,0.0234742006286793,0.0234742006286793
+cat__Neighborhood_Mitchel,-0.023205953796307976,0.023205953796307976
+num__Lot Area,0.023083461722541023,0.023083461722541023
+num__Year Remod/Add,0.02168802604126506,0.02168802604126506
+num__missingindicator_Year Remod/Add,-0.020779811924319987,0.020779811924319987
+cat__Land Contour_Bnk,-0.020481365525621492,0.020481365525621492
+cat__Neighborhood_BrkSide,0.019505108158672645,0.019505108158672645
+cat__Condition 1_PosN,0.019375377602240902,0.019375377602240902
+cat__MS SubClass_060,-0.01922646855540247,0.01922646855540247
+cat__Land Contour_HLS,0.019188160971136212,0.019188160971136212
+cat__Neighborhood_OldTown,-0.019042094345914494,0.019042094345914494
+cat__Condition 1_Artery,-0.018881393608415706,0.018881393608415706
+cat__Bsmt Exposure_Av,0.017771788308413614,0.017771788308413614
+cat__Foundation_PConc,0.017698338426892953,0.017698338426892953
+num__Garage Cars,0.017348026688865682,0.017348026688865682
+cat__Heating QC_Gd,0.01729145014560895,0.01729145014560895
+cat__Paved Drive_N,-0.01660260504336853,0.01660260504336853
+num__Full Bath,0.015828949584637583,0.015828949584637583
+cat__Mo Sold_7,0.015491270119419932,0.015491270119419932
+num__Bsmt Unf SF,-0.014949153906273367,0.014949153906273367
+cat__Paved Drive_Y,0.01472773720923436,0.01472773720923436
+cat__Bsmt Qual_Fa,-0.01383341578937609,0.01383341578937609
+cat__Exterior 1st_AsbShng,-0.013739772237660658,0.013739772237660658
+cat__Mo Sold_6,0.013460682923766454,0.013460682923766454
+cat__Neighborhood_IDOTRR,-0.012453834702362753,0.012453834702362753
+cat__Exterior 1st_MetalSd,0.012324982425140088,0.012324982425140088
+num__BsmtFin SF 1,0.012265277398907974,0.012265277398907974
+cat__BsmtFin Type 1_GLQ,0.0121183770095256,0.0121183770095256
+cat__Fireplace Qu_Gd,0.012064821920573931,0.012064821920573931
+cat__BsmtFin Type 1_ALQ,0.01161572450637753,0.01161572450637753
+num__Screen Porch,0.01136222284177473,0.01136222284177473
+num__Fireplaces,0.01122096581996415,0.01122096581996415
+num__Bsmt Full Bath,0.010507399231804928,0.010507399231804928
+cat__Mo Sold_5,0.010459651974911072,0.010459651974911072
+cat__Alley_Pave,0.009976458756702068,0.009976458756702068
+num__Garage Area,0.009738866250864134,0.009738866250864134
+cat__MS SubClass_070,0.009713945652584243,0.009713945652584243
+cat__Heating_GasW,0.009647603412200638,0.009647603412200638
+cat__Condition 1_Feedr,-0.009601585502018362,0.009601585502018362
+cat__Lot Config_Inside,0.00944899617178948,0.00944899617178948
+num__missingindicator_Year Built,-0.009421910419788416,0.009421910419788416
+cat__Mas Vnr Type_BrkCmn,-0.009391907122294199,0.009391907122294199
+cat__Bldg Type_Duplex,-0.009227244641344327,0.009227244641344327
+num__Lot Frontage,0.009170385633400911,0.009170385633400911
+num__Kitchen AbvGr,-0.009136744228172981,0.009136744228172981
+cat__Condition 2_Norm,0.008818837802114399,0.008818837802114399
+cat__Exter Qual_Ex,0.00852240707942494,0.00852240707942494
+cat__Mas Vnr Type_None,0.0084593725647077,0.0084593725647077
+cat__Bldg Type_1Fam,0.008392478073906367,0.008392478073906367
+cat__Garage Type_Detchd,0.008390528518920828,0.008390528518920828
+num__Yr Sold,-0.007951142108763574,0.007951142108763574
+num__1st Flr SF,0.00785078739872534,0.00785078739872534
+cat__Mas Vnr Type_Stone,0.007316975336086789,0.007316975336086789
+cat__MS SubClass_050,0.007082425176719959,0.007082425176719959
+cat__Fireplace Qu___ABSENT__,-0.006860397327644394,0.006860397327644394
+cat__Mo Sold_3,-0.006717332826140032,0.006717332826140032
+cat__Lot Config_FR2,-0.00668927406434031,0.00668927406434031
+cat__Bsmt Cond_Gd,0.00658821858230008,0.00658821858230008
+num__Half Bath,0.006484138566573386,0.006484138566573386
+num__Wood Deck SF,0.006454521095245468,0.006454521095245468
+cat__BsmtFin Type 1_BLQ,0.006430502670007441,0.006430502670007441
+cat__Roof Style_Gable,0.0063500178596818495,0.0063500178596818495
+cat__House Style_SFoyer,0.006230373610885238,0.006230373610885238
+cat__BsmtFin Type 2_Rec,-0.005842045672373737,0.005842045672373737
+num__Low Qual Fin SF,-0.005806047662235151,0.005806047662235151
+cat__Mo Sold_9,0.005614175019733435,0.005614175019733435
+num__Bedroom AbvGr,-0.005491057909046586,0.005491057909046586
+num__missingindicator_BsmtFin SF 1,-0.005302169111001698,0.005302169111001698
+cat__Garage Type_Attchd,0.005134135911975732,0.005134135911975732
+num__Garage Yr Blt,0.00508416169165421,0.00508416169165421
+cat__Garage Qual_Fa,-0.0050427391462319485,0.0050427391462319485
+cat__House Style_1Story,-0.005038701219129138,0.005038701219129138
+num__Enclosed Porch,0.005027389879507285,0.005027389879507285
+cat__Exter Qual_TA,-0.004862611648976321,0.004862611648976321
+cat__Mo Sold_2,-0.004712557738702897,0.004712557738702897
+num__Open Porch SF,0.004555684363384564,0.004555684363384564
+cat__Kitchen Qual_TA,-0.004048041610139877,0.004048041610139877
+cat__BsmtFin Type 2_BLQ,-0.0038666205259796325,0.0038666205259796325
+cat__Mo Sold_10,-0.0036424646817775617,0.0036424646817775617
+cat__Exterior 2nd_Wd Sdng,0.0034275083411774813,0.0034275083411774813
+num__Mas Vnr Area,0.0032958515987368047,0.0032958515987368047
+cat__Roof Style_Hip,0.0028315537173276882,0.0028315537173276882
+cat__Neighborhood_Gilbert,-0.002802724850235951,0.002802724850235951
+cat__MS Zoning_RM,-0.0027499142619394927,0.0027499142619394927
+cat__BsmtFin Type 1_LwQ,-0.0026361888099832483,0.0026361888099832483
+cat__BsmtFin Type 2_GLQ,0.002260730562012455,0.002260730562012455
+cat__Lot Shape_IR1,0.002209285305187578,0.002209285305187578
+num__TotRms AbvGrd,0.0021929265503734807,0.0021929265503734807
+cat__Garage Finish_RFn,-0.0020884282039416993,0.0020884282039416993
+cat__Foundation_BrkTil,-0.0020122548616269514,0.0020122548616269514
+cat__Fence___ABSENT__,0.0017031990033403927,0.0017031990033403927
+cat__Neighborhood_SawyerW,-0.0016664266151995683,0.0016664266151995683
+num__3Ssn Porch,0.0016234735333552856,0.0016234735333552856
+cat__Garage Finish_Fin,0.0016179718250966689,0.0016179718250966689
+cat__Heating QC_Fa,-0.001373240031547976,0.001373240031547976
+cat__Electrical_SBrkr,-0.0011602642413890327,0.0011602642413890327
+cat__Neighborhood_NAmes,-0.0010862753185767846,0.0010862753185767846
+num__missingindicator_Lot Frontage,0.0010760522490226873,0.0010760522490226873
+num__Misc Val,-0.000989624206027802,0.000989624206027802
+cat__Neighborhood_Sawyer,0.0008283840768546458,0.0008283840768546458
+num__Bsmt Half Bath,0.0007414696547071174,0.0007414696547071174
+num__missingindicator_Mas Vnr Area,0.0005634128899322243,0.0005634128899322243
+cat__Mo Sold_11,-0.0005623067289029088,0.0005623067289029088
+cat__Bsmt Exposure_No,-0.00036159086575279726,0.00036159086575279726
+cat__Fence_GdWo,-0.0003567010250472436,0.0003567010250472436
+cat__MS SubClass_085,0.0002329086517717131,0.0002329086517717131
+cat__Central Air_Y,3.285151090763387e-16,3.285151090763387e-16
+num__missingindicator_BsmtFin SF 2,-4.910024577813006e-17,4.910024577813006e-17
+num__missingindicator_Bsmt Unf SF,-3.4305848578606156e-19,3.4305848578606156e-19
+num__missingindicator_Total Bsmt SF,-2.572938643395462e-19,2.572938643395462e-19
+cat__Garage Qual_Ex,0.0,0.0
+cat__Misc Feature_Gar2,0.0,0.0
+cat__Lot Shape_IR2,0.0,0.0
+cat__Garage Qual_Gd,0.0,0.0
+cat__Misc Feature_Elev,-0.0,0.0
+num__BsmtFin SF 2,0.0,0.0
+cat__House Style_2Story,-0.0,0.0
+cat__Neighborhood_Greens,0.0,0.0
+cat__Neighborhood_Landmrk,-0.0,0.0
+cat__Neighborhood_NPkVill,0.0,0.0
+cat__Neighborhood_SWISU,0.0,0.0
+cat__Mo Sold_8,0.0,0.0
+cat__Mo Sold_4,-0.0,0.0
+cat__Mo Sold_12,0.0,0.0
+cat__Condition 2_RRAn,-0.0,0.0
+cat__Condition 2_RRNn,-0.0,0.0
+cat__Bldg Type_2fmCon,0.0,0.0
+cat__Bldg Type_TwnhsE,0.0,0.0
+cat__House Style_1.5Fin,0.0,0.0
+cat__Condition 2_PosA,0.0,0.0
+cat__House Style_1.5Unf,0.0,0.0
+cat__House Style_2.5Unf,0.0,0.0
+cat__Condition 2_PosN,-0.0,0.0
+cat__Roof Matl_CompShg,0.0,0.0
+cat__Roof Style_Shed,-0.0,0.0
+cat__Roof Style_Mansard,-0.0,0.0
+cat__Roof Style_Gambrel,-0.0,0.0
+cat__Roof Style_Flat,0.0,0.0
+cat__House Style_SLvl,-0.0,0.0
+cat__Exterior 1st_HdBoard,-0.0,0.0
+cat__Exterior 1st_CemntBd,0.0,0.0
+cat__Exterior 1st_CBlock,-0.0,0.0
+cat__Exterior 1st_BrkComm,0.0,0.0
+cat__Exterior 1st_AsphShn,0.0,0.0
+cat__Roof Matl_WdShake,-0.0,0.0
+cat__Roof Matl_Tar&Grv,-0.0,0.0
+cat__Condition 2_RRAe,-0.0,0.0
+cat__House Style_2.5Fin,0.0,0.0
+cat__Roof Matl_Metal,0.0,0.0
+cat__Roof Matl_Roll,0.0,0.0
+num__missingindicator_Garage Area,-0.0,0.0
+cat__Roof Matl_Membran,0.0,0.0
+num__missingindicator_Garage Cars,-0.0,0.0
+num__missingindicator_Garage Yr Blt,0.0,0.0
+num__missingindicator_Bsmt Half Bath,0.0,0.0
+cat__MS SubClass_020,-0.0,0.0
+cat__Alley___ABSENT__,-0.0,0.0
+cat__Alley_Grvl,-0.0,0.0
+cat__Street_Pave,0.0,0.0
+cat__Street_Grvl,-0.0,0.0
+cat__MS Zoning_RH,0.0,0.0
+cat__MS Zoning_I (all),-0.0,0.0
+cat__MS Zoning_A (agr),-0.0,0.0
+num__missingindicator_Bsmt Full Bath,0.0,0.0
+cat__MS SubClass_190,0.0,0.0
+cat__MS SubClass_180,-0.0,0.0
+cat__MS SubClass_150,-0.0,0.0
+cat__MS SubClass_120,0.0,0.0
+cat__MS SubClass_080,-0.0,0.0
+cat__Garage Finish___MISSING__,-0.0,0.0
+num__Pool Area,0.0,0.0
+cat__Lot Shape_Reg,-0.0,0.0
+cat__MS SubClass_045,0.0,0.0
+cat__MS SubClass_040,-0.0,0.0
+cat__Misc Feature_Othr,0.0,0.0
+cat__Misc Feature_Shed,-0.0,0.0
+cat__Paved Drive_P,0.0,0.0
+cat__Pool QC_Ex,0.0,0.0
+cat__MS SubClass_075,0.0,0.0
+num__2nd Flr SF,0.0,0.0
+cat__Exterior 1st_WdShing,0.0,0.0
+cat__Exterior 2nd_AsbShng,-0.0,0.0
+cat__Exterior 2nd_AsphShn,0.0,0.0
+cat__Exterior 2nd_Brk Cmn,0.0,0.0
+cat__Exterior 2nd_BrkFace,-0.0,0.0
+cat__Exterior 2nd_CBlock,-0.0,0.0
+cat__Exterior 2nd_CmentBd,0.0,0.0
+cat__Exterior 2nd_HdBoard,-0.0,0.0
+cat__Exterior 2nd_ImStucc,-0.0,0.0
+cat__Exterior 2nd_MetalSd,0.0,0.0
+cat__Exterior 1st_ImStucc,-0.0,0.0
+cat__Mas Vnr Type___MISSING__,0.0,0.0
+cat__Exterior 1st_Wd Sdng,-0.0,0.0
+cat__Exterior 1st_VinylSd,0.0,0.0
+cat__Exterior 1st_Stucco,-0.0,0.0
+cat__Exterior 1st_Stone,-0.0,0.0
+cat__Exterior 2nd_Plywood,-0.0,0.0
+cat__Exterior 2nd_Other,-0.0,0.0
+cat__Bsmt Cond_Fa,-0.0,0.0
+cat__Bsmt Cond_Ex,-0.0,0.0
+cat__Bsmt Qual___MISSING__,-0.0,0.0
+cat__Bsmt Qual___ABSENT__,-0.0,0.0
+cat__Bsmt Qual_TA,-0.0,0.0
+cat__Bsmt Qual_Po,0.0,0.0
+cat__Bsmt Qual_Gd,0.0,0.0
+cat__Mas Vnr Type_CBlock,-0.0,0.0
+cat__Mas Vnr Type_BrkFace,-0.0,0.0
+cat__Exterior 2nd_Wd Shng,0.0,0.0
+cat__Exterior 1st_PreCast,0.0,0.0
+cat__Exterior 1st_Plywood,-0.0,0.0
+cat__Exter Qual_Gd,-0.0,0.0
+cat__Exter Qual_Fa,0.0,0.0
+cat__Land Contour_Lvl,0.0,0.0
+cat__Utilities_AllPub,0.0,0.0
+cat__Utilities_NoSeWa,-0.0,0.0
+cat__Utilities_NoSewr,-0.0,0.0
+cat__Condition 1_RRNe,0.0,0.0
+cat__Condition 1_RRAn,-0.0,0.0
+cat__Land Contour_Low,-0.0,0.0
+cat__Condition 2_Feedr,-0.0,0.0
+cat__Neighborhood_Veenker,-0.0,0.0
+cat__Condition 1_RRAe,-0.0,0.0
+cat__Foundation_Slab,-0.0,0.0
+cat__Neighborhood_Timber,0.0,0.0
+cat__Foundation_CBlock,0.0,0.0
+cat__Exter Cond_Gd,0.0,0.0
+cat__Condition 2_Artery,-0.0,0.0
+cat__Condition 1_RRNn,-0.0,0.0
+cat__Exter Cond_Ex,-0.0,0.0
+cat__Exter Cond_Fa,0.0,0.0
+cat__BsmtFin Type 1___ABSENT__,-0.0,0.0
+cat__BsmtFin Type 2_ALQ,0.0,0.0
+cat__BsmtFin Type 1_Unf,-0.0,0.0
+cat__BsmtFin Type 1_Rec,-0.0,0.0
+cat__Bsmt Exposure___MISSING__,0.0,0.0
+cat__BsmtFin Type 1___MISSING__,-0.0,0.0
+cat__Bsmt Exposure___ABSENT__,-0.0,0.0
+cat__Foundation_Wood,-0.0,0.0
+cat__Foundation_Stone,0.0,0.0
+cat__Lot Config_Corner,-0.0,0.0
+cat__Exterior 2nd_VinylSd,-0.0,0.0
+cat__Exterior 2nd_Stucco,-0.0,0.0
+cat__Exterior 2nd_Stone,-0.0,0.0
+cat__Exterior 2nd_PreCast,0.0,0.0
+cat__Heating QC_TA,-0.0,0.0
+cat__Electrical_FuseA,0.0,0.0
+cat__Bsmt Cond_Po,0.0,0.0
+cat__Bsmt Cond_TA,-0.0,0.0
+cat__Bsmt Cond___MISSING__,-0.0,0.0
+cat__Bsmt Cond___ABSENT__,-0.0,0.0
+cat__Bsmt Exposure_Mn,-0.0,0.0
+cat__Heating_OthW,-0.0,0.0
+cat__BsmtFin Type 2_Unf,0.0,0.0
+cat__BsmtFin Type 2_LwQ,-0.0,0.0
+cat__Fireplace Qu_TA,-0.0,0.0
+cat__Heating_Grav,-0.0,0.0
+cat__Heating_GasA,0.0,0.0
+cat__Heating_Floor,-0.0,0.0
+cat__BsmtFin Type 2___MISSING__,0.0,0.0
+cat__Heating_Wall,-0.0,0.0
+cat__Functional_Mod,0.0,0.0
+cat__Functional_Sev,-0.0,0.0
+cat__Fireplace Qu_Ex,-0.0,0.0
+cat__Fireplace Qu_Fa,0.0,0.0
+cat__Fireplace Qu_Po,0.0,0.0
+cat__Functional_Maj1,-0.0,0.0
+cat__Kitchen Qual_Fa,-0.0,0.0
+cat__Kitchen Qual_Gd,0.0,0.0
+cat__Electrical_FuseF,0.0,0.0
+cat__Electrical_FuseP,0.0,0.0
+cat__Electrical_Mix,-0.0,0.0
+cat__Electrical___MISSING__,0.0,0.0
+cat__Garage Finish_Unf,0.0,0.0
+cat__Garage Finish___ABSENT__,-0.0,0.0
+cat__Fence_MnWw,-0.0,0.0
+cat__BsmtFin Type 2___ABSENT__,-0.0,0.0
+cat__Fence_MnPrv,0.0,0.0
+cat__Fence_GdPrv,0.0,0.0
+cat__Neighborhood_CollgCr,-0.0,0.0
+cat__Pool QC___ABSENT__,-0.0,0.0
+cat__Neighborhood_BrDale,-0.0,0.0
+cat__Neighborhood_Blueste,0.0,0.0
+cat__Neighborhood_Blmngtn,-0.0,0.0
+cat__Neighborhood_ClearCr,0.0,0.0
+cat__Land Slope_Sev,-0.0,0.0
+cat__Land Slope_Mod,0.0,0.0
+cat__Land Slope_Gtl,-0.0,0.0
+cat__Lot Config_FR3,-0.0,0.0
+cat__Garage Type___ABSENT__,-0.0,0.0
+cat__Garage Type_BuiltIn,-0.0,0.0
+cat__Garage Type_Basment,0.0,0.0
+cat__Garage Type_2Types,-0.0,0.0
+cat__Pool QC_Fa,-0.0,0.0
+cat__Garage Cond_Po,-0.0,0.0
+cat__Garage Cond_Gd,0.0,0.0
+cat__Garage Cond_Fa,-0.0,0.0
+cat__Garage Cond_Ex,0.0,0.0
+cat__Garage Qual___MISSING__,-0.0,0.0
+cat__Garage Qual___ABSENT__,-0.0,0.0
+cat__Garage Qual_TA,0.0,0.0
+cat__Garage Qual_Po,-0.0,0.0
+cat__Mo Sold_1,-0.0,0.0
+cat__Misc Feature___ABSENT__,-0.0,0.0
+cat__Misc Feature_TenC,-0.0,0.0
+cat__Garage Cond___MISSING__,-0.0,0.0
+cat__Garage Cond___ABSENT__,-0.0,0.0
+cat__Pool QC_TA,0.0,0.0
+cat__Pool QC_Gd,-0.0,0.0

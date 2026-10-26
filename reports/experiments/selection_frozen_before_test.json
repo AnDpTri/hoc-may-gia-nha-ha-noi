@@ -1,0 +1,76 @@
+{
+  "selected_model": "Lasso_tuned",
+  "selected_preprocessing": {
+    "engineered": false,
+    "clipping": true,
+    "log_areas": false
+  },
+  "best_params": {
+    "Ridge_tuned": {
+      "alpha": 10.0
+    },
+    "Lasso_tuned": {
+      "alpha": 0.0003
+    },
+    "ElasticNet_tuned": {
+      "alpha": 0.0003,
+      "l1_ratio": 0.9
+    },
+    "HistGradientBoosting": {
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15
+    }
+  },
+  "ridge_ablation_alpha": 10.0,
+  "selection_metric": "mean 3 yearly-fold RMSE log, equal fold weights",
+  "selected_at_utc": "2026-10-26T13:03:55.368272+00:00",
+  "test_used_for_selection": false,
+  "test_year": 2010,
+  "grids": {
+    "Ridge_tuned": {
+      "regressor__model__alpha": [
+        0.1,
+        1.0,
+        3.0,
+        10.0,
+        30.0,
+        100.0,
+        300.0,
+        1000.0
+      ]
+    },
+    "Lasso_tuned": {
+      "regressor__model__alpha": [
+        0.0001,
+        0.0003,
+        0.001,
+        0.003,
+        0.01,
+        0.03
+      ]
+    },
+    "ElasticNet_tuned": {
+      "regressor__model__alpha": [
+        0.0003,
+        0.001,
+        0.003,
+        0.01
+      ],
+      "regressor__model__l1_ratio": [
+        0.1,
+        0.5,
+        0.9
+      ]
+    },
+    "HistGradientBoosting": {
+      "regressor__model__max_leaf_nodes": [
+        15,
+        31
+      ],
+      "regressor__model__l2_regularization": [
+        1.0,
+        10.0
+      ]
+    }
+  }
+}

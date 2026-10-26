@@ -51,8 +51,9 @@ def clean_features(raw):
 
 class QuantileClipper(BaseEstimator, TransformerMixin):
     """Winsorize các cột diện tích/giá trị về [0, phân vị 99% của train]."""
-    def __init__(self, quantile=0.99):
+    def __init__(self, quantile=0.99, enabled=True):
         self.quantile = quantile
+        self.enabled = enabled
 
     def fit(self, X, y=None):
         self.feature_names_in_ = np.asarray(X.columns, dtype=object)
@@ -62,7 +63,8 @@ class QuantileClipper(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         z = X.copy()
-        z[self.columns_] = z[self.columns_].clip(lower=0, upper=self.upper_, axis=1)
+        if self.enabled:
+            z[self.columns_] = z[self.columns_].clip(lower=0, upper=self.upper_, axis=1)
         return z
 
 def make_preprocessor(x_train):

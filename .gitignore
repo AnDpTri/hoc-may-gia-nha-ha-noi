@@ -3,4 +3,10 @@ __pycache__/
 .ipynb_checkpoints/
 work/
 *.joblib
+!models/*.joblib
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
 ~$*

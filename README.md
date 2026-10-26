@@ -1,50 +1,92 @@
 # Dự đoán giá bất động sản dựa trên đặc điểm nhà ở
 
-**Bài kiểm tra 1 — Học máy, học kỳ 1 năm học 2026–2027.**
+Dự án môn Học máy, học kỳ 1 năm học 2026–2027. Bộ nộp **KT1, KT2 và KT3** gồm dữ liệu, mã nguồn, ba notebook đã chạy, báo cáo LaTeX/PDF, mô hình và demo CLI.
 
-Bộ nộp gồm báo cáo Word tiếng Việt, notebook đã chạy, dữ liệu Ames gốc, từ điển đủ 82 cột, mã tiền xử lý và bảng kiểm tra chất lượng. Mốc này chưa huấn luyện Linear Regression/Ridge/Lasso/Elastic Net; phần lý thuyết và kế hoạch đánh giá được chuẩn bị cho mốc sau.
+## Mở kết quả
 
-## Mở bài
+- [Báo cáo tổng hợp PDF](reports/Bao_cao_KT1_KT2_KT3.pdf)
+- [Bộ nguồn LaTeX để tải lên Overleaf](reports/Bao_cao_KT1_KT2_KT3_LaTeX.zip)
+- [Nguồn LaTeX chỉnh sửa được](reports/latex_full/main.tex)
+- [KT1 khảo sát và tiền xử lý](notebooks/01_KT1_Ames_Housing.ipynb)
+- [KT2 huấn luyện và đánh giá](notebooks/02_KT2_Train_Evaluate.ipynb)
+- [KT3 tối ưu và cải tiến](notebooks/03_KT3_Tuning_Improvement.ipynb)
+- [Bản Word riêng KT1](reports/Bao_cao_KT1_Du_doan_gia_nha.docx)
 
-- [Báo cáo Word](reports/Bao_cao_KT1_Du_doan_gia_nha.docx)
-- [Notebook đã chạy](notebooks/01_KT1_Ames_Housing.ipynb)
-- [Ôn vấn đáp và thực hành](docs/ON_TAP_VAN_DAP.md)
-- [Đối chiếu 10 tiêu chí](docs/DOI_CHIEU_TIEU_CHI.md)
-- [Từ điển 82 cột](docs/data_dictionary.csv)
-- [Nguồn và điều kiện sử dụng](data/SOURCES.md)
-- [Nhật ký và thông tin cần bổ sung](docs/NHAT_KY_DONG_GOP.md)
+## Kết quả thực nghiệm
 
-## Kết quả KT1
+Ames gốc có 2.930 dòng × 82 cột; dùng 77 đầu vào, sau mã hóa có 350 cột. Train 2006–2009 gồm 2.589 mẫu; test 2010 gồm 341 mẫu. Ba fold CV mở rộng theo năm, **fit lại toàn pipeline trong mỗi fold**.
 
 | Nội dung | Kết quả |
 |---|---:|
-| Dữ liệu gốc | 2.930 dòng × 82 cột |
-| Đầu vào sau bỏ định danh/thông tin chốt giao dịch | 77 biến |
-| Train 2006–2009 | 2.589 dòng |
-| Test năm 2010 | 341 dòng |
-| Ma trận sau tiền xử lý | 350 cột |
-| Ô trống thật / mã NA chỉ không có tiện ích | 719 / 13.278 |
-| Ô năm vi phạm giả định | 6 |
-| Dòng trùng / PID trùng | 0 / 0 |
+| Mô hình cuối chọn theo CV | Lasso_tuned alpha=0.0003 |
+| RMSE log CV mean ± std mẫu | 0.12719 ± 0.00977 |
+| RMSE log test | 0.15095 |
+| MAE test USD | 14,840.28 |
+| R² test | 0.91893 |
+| Giảm RMSE log test so với baseline | 63.88% |
 
-Fit clipping, điền khuyết, chuẩn hóa và one-hot chỉ trên train. Giá được biến đổi `log1p`, giữ mọi dòng và không clip nhãn. Chỉ EDA train; test chỉ audit/transform. `data/processed/ames_ready.npz` dùng cho kiểm tra dữ liệu và fit cuối train, **không dùng để tính CV** vì imputer/scaler đã học toàn bộ train. Khi CV phải fit pipeline từ đặc trưng gốc trong từng fold.
+KT2 so sánh DummyMeanLog, OLS, Ridge, Lasso và Elastic Net. KT3 có grid search, bảy đặc trưng mới, ablation clip/log và đối chứng HistGradientBoosting. Đặc trưng mới chưa vượt cấu hình gốc; bỏ clipping làm kết quả kém ổn định. Không chọn lại theo test: Lasso được giữ dù một số cấu hình khác có test log thấp hơn đôi chút. Chênh lệch giữa các mô hình regularization nhỏ so với biến động theo năm.
 
-## Chạy lại bằng Python 3.11
+[Kết quả đầy đủ](reports/experiments) gồm từng fold, mọi ứng viên grid, lựa chọn khóa trước test, lỗi từng mẫu và tầm quan trọng hoán vị. Ví dụ RidgeCV/LassoCV dùng preprocessing đóng băng năm 2006 để không nhìn các fold validation; bảng chính dùng GridSearchCV trên toàn pipeline.
 
-Từ thư mục gốc của repo, trong PowerShell:
+## Cài và chạy
+
+Dùng Python 3.11, mở PowerShell từ gốc repo:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m src.kt1
+
+# Tái tạo KT1 KT2 KT3, notebook, nguồn LaTeX và kiểm tra
+.\.venv\Scripts\python.exe -m src.run_all
+
+# Demo từ model đã lưu, không huấn luyện lại
+.\.venv\Scripts\python.exe -m src.predict --example
+.\.venv\Scripts\python.exe -m src.predict --input examples\house.json --output work\predictions.csv
+
+# Kiểm tra
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
-.\.venv\Scripts\python.exe docs\build_notebook.py
 ```
 
-Notebook có thể mở bằng VS Code (Python + Jupyter) hoặc Jupyter cài thêm. Chọn interpreter `.venv` rồi Run All. Mã tìm thư mục tương đối, không cần sửa đường dẫn theo máy. Dữ liệu raw đã đi kèm, nên các bước phân tích chạy được khi không có mạng.
+Chạy toàn bộ mất vài phút tùy máy. Dữ liệu raw đi kèm nên huấn luyện không cần mạng. Mở notebook bằng VS Code + Python/Jupyter và chọn `.venv`. Notebook KT2/KT3 đọc bảng đã lưu và có ô demo trên train, không tự chấm lại test mỗi lần mở.
 
-`requirements.txt` khóa phiên bản môi trường đã thực chạy. Tái tạo báo cáo Word là tùy chọn: cài `python-docx`, rồi chạy `python docs/build_report.py`. Word đã tạo sẵn nên không bắt buộc cài thư viện này để chạy EDA.
+Chạy riêng: `python -m src.kt1`, `python -m src.experiments`, `python -m src.plots`. Word KT1 có sẵn; muốn tạo lại cần cài thêm `python-docx` rồi chạy `python docs/build_report.py`.
 
-## Phạm vi và tính trung thực
+## LaTeX
 
-Đây là dữ liệu giao dịch Ames, Iowa 2006–2010, đơn vị USD và ft²; không phải dữ liệu rao bán Việt Nam. Chưa có kết quả mô hình; mục tiêu RMSE log ≤ 0,18 là mục tiêu đề xuất. AI hỗ trợ chuẩn bị mã và tài liệu, được khai báo trong báo cáo. Sinh viên tự bổ sung họ tên/MSSV/lớp, kiểm tra, hiểu mã và ghi nhận đóng góp thực tế trước khi nộp. Không tự tạo lịch sử đóng góp của sinh viên.
+Trên Overleaf chọn **New project → Existing project (.zip)**, tải `reports/Bao_cao_KT1_KT2_KT3_LaTeX.zip`, mở `main.tex` và Recompile. Có đủ ảnh, hỗ trợ pdfLaTeX/T5 hoặc XeLaTeX/fontspec. Không cần tải dataset/Python lên Overleaf.
+
+Nếu có TeX cục bộ:
+
+```powershell
+Set-Location reports\latex_full
+xelatex main.tex
+xelatex main.tex
+```
+
+Nguồn được kiểm tra bằng Tectonic 0.17.0; engine không kèm repo. `run_all` tạo nguồn LaTeX, không tự cài TeX hoặc biên dịch PDF. PDF đã biên dịch được lưu sẵn.
+
+## Cấu trúc
+
+| Thư mục | Nội dung |
+|---|---|
+| data/raw | TSV và tài liệu gốc giữ nguyên bytes |
+| data/processed | Split và ma trận KT1; không dùng ma trận đã fit cả train để CV |
+| src | Tiền xử lý, mô hình, thực nghiệm, hình và CLI |
+| notebooks | Ba notebook đã chạy |
+| reports/experiments | Kết quả chi tiết, dự đoán, grid, lỗi |
+| reports/latex_full | Nguồn báo cáo tổng hợp và ảnh |
+| models | Model cuối, model card |
+| tests | Kiểm tra leakage, fold, schema, inference và hash |
+| docs | Ôn vấn đáp, đối chiếu tiêu chí và các builder |
+
+## Trước khi nộp
+
+- [Nguồn và điều kiện dữ liệu](data/SOURCES.md), [từ điển 82 cột](docs/data_dictionary.csv).
+- [Đối chiếu KT1](docs/DOI_CHIEU_TIEU_CHI.md), [KT2 KT3](docs/DOI_CHIEU_KT2_KT3.md).
+- [Ôn KT1](docs/ON_TAP_VAN_DAP.md), [ôn KT2 KT3](docs/ON_TAP_KT2_KT3.md).
+- [Thông tin và nhật ký](docs/NHAT_KY_DONG_GOP.md).
+
+AI hỗ trợ tạo mã/tài liệu, đã khai báo trong báo cáo. Sinh viên điền họ tên, MSSV, lớp, giảng viên; tự kiểm tra, hiểu và ghi phần việc thực sự. Không tự tạo lịch sử đóng góp nhiều tuần. Phần vấn đáp và thực hành cá nhân phải do sinh viên thực hiện.
+
+Dữ liệu thuộc Ames, Iowa 2006–2010, đơn vị USD và ft²; không đại diện thị trường Việt Nam hoặc hiện tại. Repo private mặc định; khi nộp cần cấp quyền phù hợp cho giảng viên.

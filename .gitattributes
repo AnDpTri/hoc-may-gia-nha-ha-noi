@@ -8,3 +8,7 @@ data/raw/* -text
 *.png binary
 *.docx binary
 *.npz binary
+*.pdf binary
+*.zip binary
+*.joblib binary
+*.tex text eol=lf
