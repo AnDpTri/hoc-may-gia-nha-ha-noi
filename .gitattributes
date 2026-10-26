@@ -1,0 +1,10 @@
+# Giữ nguyên bytes nguồn để SHA-256 không đổi khi clone trên Windows.
+data/raw/* -text
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+*.png binary
+*.docx binary
+*.npz binary

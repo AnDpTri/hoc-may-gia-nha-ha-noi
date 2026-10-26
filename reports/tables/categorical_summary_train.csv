@@ -1,0 +1,44 @@
+,count,unique,top,freq
+MS SubClass,2589,16,020,954
+MS Zoning,2589,7,RL,2020
+Street,2589,2,Pave,2580
+Alley,2589,3,__ABSENT__,2411
+Lot Shape,2589,4,Reg,1629
+Land Contour,2589,4,Lvl,2322
+Utilities,2589,3,AllPub,2586
+Lot Config,2589,5,Inside,1899
+Land Slope,2589,3,Gtl,2471
+Neighborhood,2589,28,NAmes,385
+Condition 1,2589,9,Norm,2228
+Condition 2,2589,8,Norm,2561
+Bldg Type,2589,5,1Fam,2153
+House Style,2589,8,1Story,1303
+Roof Style,2589,6,Gable,2043
+Roof Matl,2589,8,CompShg,2550
+Exterior 1st,2589,16,VinylSd,915
+Exterior 2nd,2589,17,VinylSd,907
+Mas Vnr Type,2567,5,None,1533
+Exter Qual,2589,4,TA,1578
+Exter Cond,2589,5,TA,2268
+Foundation,2589,6,PConc,1172
+Bsmt Qual,2588,6,TA,1120
+Bsmt Cond,2588,6,TA,2301
+Bsmt Exposure,2586,5,No,1672
+BsmtFin Type 1,2588,7,Unf,766
+BsmtFin Type 2,2587,7,Unf,2212
+Heating,2589,6,GasA,2548
+Heating QC,2589,5,Ex,1330
+Central Air,2589,2,Y,2419
+Electrical,2588,5,SBrkr,2363
+Kitchen Qual,2589,4,TA,1318
+Functional,2589,8,Typ,2409
+Fireplace Qu,2589,6,__ABSENT__,1238
+Garage Type,2589,7,Attchd,1530
+Garage Finish,2587,4,Unf,1081
+Garage Qual,2588,6,TA,2306
+Garage Cond,2588,6,TA,2356
+Paved Drive,2589,3,Y,2344
+Pool QC,2589,5,__ABSENT__,2576
+Fence,2589,5,__ABSENT__,2094
+Misc Feature,2589,6,__ABSENT__,2505
+Mo Sold,2589,12,7,441

@@ -1,0 +1,5 @@
+stage,rows,columns,missing_cells
+Train sau quy tắc ngữ nghĩa,2589,77,648
+Test sau quy tắc ngữ nghĩa,341,77,77
+Train sau pipeline,2589,350,0
+Test sau pipeline,341,350,0
