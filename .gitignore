@@ -1,12 +1,19 @@
 .venv/
 __pycache__/
 .ipynb_checkpoints/
-work/
+.gradio/
+~$*
+
+# Dữ liệu gốc tải từ Hugging Face (~1,7 GB) — notebook 01 tự tải lại vào đây khi chạy trên máy
+raw_parquet/
+# Bản CSV của dữ liệu sạch (137 MB, vượt giới hạn 100 MB của GitHub); bản .parquet cùng nội dung đã có
+data_processed/02_hanoi_nhapho_clean.csv
+
+# File nén dự án tải từ Google Drive
+ML_house_price-*.zip
+
 *.joblib
 !models/*.joblib
-*.aux
-*.log
-*.toc
-*.out
-*.synctex.gz
-~$*
+
+# Gói nộp bài (tạo từ thư mục dự án)
+Nop_bai/

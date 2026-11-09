@@ -1,0 +1,13 @@
+﻿step,rows,removed,note
+Toàn bộ dữ liệu,3500744,0,
+Tỉnh = Hà Nội,1140542,2360202,
+Loại hình = nhà riêng/nhà phố,549408,591134,theo KEEP_TYPE_RE/EXCLUDE_TYPE_RE
+Có giá & diện tích hợp lệ,530093,19315,"loại giá thỏa thuận/không đọc được, diện tích thiếu"
+Khử trùng nội dung mô tả,462756,67337,
+Khử trùng bộ thuộc tính,396523,66233,
+Gán train/test (sau khử trùng lặp),396523,0,"train 317,156 / test 79,367"
+Ngưỡng giá,395319,1204,0.3–300 tỷ
+Ngưỡng diện tích,395143,176,10–1000 m²
+Ngưỡng đơn giá,395058,85,5–2000 triệu/m²
+Ngoại lai cục bộ theo phường,390169,4889,|robust z| ≤ 3.5
+Dữ liệu cuối cùng,390169,0,"train 312,092 / test 78,077"

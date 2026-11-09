@@ -1,0 +1,5 @@
+﻿mô hình,MAPE toàn bộ test (%),MAPE phần gần trùng (%),MAPE phần không trùng (%),MdAPE phần không trùng (%)
+Baseline: đơn giá quận × DT,28.45,25.91,29.56,23.91
+Lasso,22.44,21.35,22.92,17.52
+Random Forest (tối ưu),20.97,19.1,21.78,15.56
+Gradient Boosting (tối ưu),18.39,16.99,19.01,13.85

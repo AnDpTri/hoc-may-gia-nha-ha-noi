@@ -1,7 +1,0 @@
-{
-  "preprocessing_fit_year": 2006,
-  "calibration_rows": 625,
-  "ridgecv_alpha": 30.0,
-  "lassocv_alpha": 0.0003,
-  "note": "Minh họa đúng lớp RidgeCV/LassoCV với preprocessing đóng băng năm 2006; không thay thế CV refit pipeline chính."
-}

@@ -1,0 +1,4 @@
+﻿cách chia,số tin train,số tin test,MAPE (%),MdAPE (%)
+Ngẫu nhiên 80/20 (đang dùng),312092,78077,22.4415,17.197
+Phân tầng theo quận 80/20,312135,78034,22.4489,17.2541
+"Theo thời gian (train < 2026-01-01, test ≥)",315416,73700,22.464,18.5659

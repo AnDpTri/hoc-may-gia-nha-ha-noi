@@ -1,0 +1,238 @@
+﻿,importance
+log_area,0.5279758876987531
+frontage_width,0.08194886281125417
+kinh_doanh,0.06182712742922579
+thang_may,0.0437599515488853
+road_type_duong_lon_>=6m,0.03800324483630061
+bedroom_count,0.030072227863140174
+floor_count,0.017206114667209574
+missingindicator_bedroom_count,0.01644585865639293
+is_mat_pho,0.01570000053536026
+ward_loc_infrequent_sklearn,0.014780220823745435
+bathroom_count,0.013796818502193175
+car_access,0.01025455261747864
+district_key_cau giay,0.00901065603288814
+district_key_hoai duc,0.0071870639451639545
+district_key_hoan kiem,0.00696786005427816
+missingindicator_bathroom_count,0.006697316332298646
+road_width,0.005432887651390121
+district_key_dong da,0.00472580141221849
+district_key_thanh tri,0.0045608093636450705
+district_key_long bien,0.004286918787578314
+has_so_do,0.0041447102835817885
+district_key_ba dinh,0.0041199674105891725
+district_key_tay ho,0.004065851037591493
+road_type_unknown,0.0036780277510534273
+missingindicator_floor_count,0.0036009357812456138
+missingindicator_frontage_width,0.0035476525665189274
+lo_goc,0.0034457843002617936
+district_key_ha dong,0.0027872046350518346
+district_key_chuong my,0.0026849909362736497
+district_key_thanh xuan,0.002268500711414671
+district_key_hai ba trung,0.0021677036848634416
+district_key_dong anh,0.0018863500470036316
+missingindicator_road_width,0.0018654367231812114
+ward_loc_tay ho | quang an,0.001819953838304823
+district_key_gia lam,0.0018134039224899396
+house_direction_Không rõ,0.0017816303218239904
+district_key_bac tu liem,0.0015727950017183168
+district_key_hoang mai,0.001447098355222978
+district_key_nam tu liem,0.0014194780601085905
+district_key_quoc oai,0.0012274503003868668
+ward_loc_ha dong | bien giang,0.0011680846801831136
+no_hau,0.0011591151117518387
+road_type_ngo_oto_3-6m,0.0011403879006547835
+district_key_thanh oai,0.0009848226741886602
+ward_loc_ha dong | yen nghia,0.000925895889242474
+ward_loc_cau giay | trung hoa,0.0007478896534372436
+ward_loc_dong da | unknown,0.0006728623759302598
+ward_loc_ba dinh | unknown,0.00062203144879295
+ward_loc_ha dong | dong mai,0.0005815945068142887
+ward_loc_long bien | bo de,0.0005577106369319604
+district_key_soc son,0.000531404453181307
+ward_loc_hai ba trung | nguyen du,0.0005289209387298562
+ward_loc_chuong my | phung chau,0.0004563741675919208
+ward_loc_cau giay | nghia do,0.0004535433101274754
+ward_loc_dong da | trung liet,0.0004351888836995796
+ward_loc_dong da | o cho dua,0.0004131964655459896
+ward_loc_cau giay | yen hoa,0.00039384408133269694
+ward_loc_nam tu liem | tay mo,0.0003866665347440611
+ward_loc_thanh xuan | khuong mai,0.00038581053064404915
+ward_loc_tay ho | xuan la,0.0003585057789217646
+ward_loc_long bien | thach ban,0.00035532856384388984
+ward_loc_cau giay | dich vong,0.00034443692030394253
+ward_loc_cau giay | dich vong hau,0.00034210855346987224
+house_direction_Đông Nam,0.0003326246537806011
+ward_loc_long bien | phuc loi,0.00030617577036023616
+road_type_ngo_nho_<3m,0.0002838832431222906
+ward_loc_tay ho | buoi,0.0002826578994529797
+ward_loc_ha dong | phu luong,0.0002743053846957709
+ward_loc_hai ba trung | unknown,0.0002685506474468853
+ward_loc_ba dinh | lieu giai,0.0002585844716625971
+ward_loc_gia lam | trau quy,0.00025524346514251884
+ward_loc_thanh xuan | nhan chinh,0.0002411516227022535
+ward_loc_tay ho | nhat tan,0.00022998352057083596
+ward_loc_dong da | lang ha,0.00022883969309953506
+ward_loc_quoc oai | hung dao,0.00022348496692528705
+ward_loc_cau giay | mai dich,0.00021069296959041957
+ward_loc_tay ho | phu thuong,0.0002084827389780425
+ward_loc_ha dong | van quan,0.00019759400164216076
+house_direction_Tây Bắc,0.0001936380518632579
+ward_loc_thanh xuan | khuong trung,0.00019087033679935405
+ward_loc_nam tu liem | xuan phuong,0.00018976642382770152
+ward_loc_cau giay | quan hoa,0.0001848491117929516
+ward_loc_thanh tri | thanh liet,0.00018416177114385508
+ward_loc_tay ho | thuy khue,0.0001841272238788704
+ward_loc_thanh xuan | khuong dinh,0.0001830109448262595
+ward_loc_thanh tri | vinh quynh,0.00017605591658465192
+ward_loc_thanh oai | bich hoa,0.00017277227409471602
+house_direction_Nam,0.0001726104434966504
+house_direction_Đông Bắc,0.00017230884171268323
+ward_loc_hoan kiem | unknown,0.0001701811056158995
+ward_loc_ba dinh | cong vi,0.00016150118264642466
+ward_loc_long bien | long bien,0.00015947499067697207
+ward_loc_dong da | lang thuong,0.0001593046567149487
+ward_loc_hoang mai | vinh hung,0.00015486154611954727
+ward_loc_nam tu liem | my dinh 1,0.00015150606648064188
+ward_loc_long bien | viet hung,0.00014622848418394477
+ward_loc_tay ho | yen phu,0.00013591643752932189
+ward_loc_ha dong | kien hung,0.00013372844071003986
+ward_loc_thanh tri | ta thanh oai,0.00013299757063150915
+house_direction_Tây Nam,0.00013238993385487126
+ward_loc_hai ba trung | pham dinh ho,0.00013217756395261066
+ward_loc_ba dinh | truc bach,0.0001312519880984654
+ward_loc_nam tu liem | my dinh 2,0.00013008164499728674
+ward_loc_long bien | ngoc thuy,0.00012575231683693483
+ward_loc_cau giay | nghia tan,0.00012017832910160666
+ward_loc_bac tu liem | xuan dinh,0.00011726456896797562
+ward_loc_hoai duc | kim chung,0.00011227772952151466
+ward_loc_bac tu liem | lien mac,0.00011064106387317929
+ward_loc_hoang mai | linh nam,0.00011026176630416046
+ward_loc_long bien | unknown,0.00010877261808097042
+ward_loc_hai ba trung | minh khai,0.00010839444602853758
+ward_loc_dong da | thinh quang,0.00010725350013735308
+ward_loc_hai ba trung | bach mai,0.00010668101193522102
+ward_loc_long bien | thuong thanh,0.00010558513671978605
+ward_loc_hoai duc | van canh,0.0001024689911300202
+house_direction_Đông,0.00010154633698634121
+ward_loc_hoai duc | an khanh,9.91866314293735e-05
+district_key_infrequent_sklearn,9.870615595907409e-05
+ward_loc_ha dong | quang trung,9.646074630156946e-05
+ward_loc_hoang mai | hoang van thu,9.310250091644454e-05
+ward_loc_ha dong | van phuc,9.222832432728412e-05
+ward_loc_ba dinh | kim ma,8.906965652830994e-05
+ward_loc_hoai duc | van con,8.835020564796706e-05
+ward_loc_quoc oai | unknown,8.808487879339361e-05
+ward_loc_hoang mai | dinh cong,8.788673973188495e-05
+ward_loc_bac tu liem | minh khai,8.709726763602663e-05
+district_key_me linh,8.524834023563554e-05
+ward_loc_thanh xuan | thanh xuan bac,8.300057035874004e-05
+ward_loc_hoai duc | dong la,8.035196188599786e-05
+ward_loc_long bien | cu khoi,7.811879756047804e-05
+ward_loc_bac tu liem | phu dien,7.720857303263497e-05
+ward_loc_hoang mai | tan mai,7.513530409382807e-05
+house_direction_Tây,7.106169570668095e-05
+ward_loc_nam tu liem | cau dien,7.091077401861107e-05
+ward_loc_hai ba trung | bach khoa,6.879826059508594e-05
+ward_loc_thanh tri | tan trieu,6.718316261461574e-05
+ward_loc_ha dong | phu lam,6.631478176660137e-05
+ward_loc_ha dong | ha cau,6.583268734177893e-05
+ward_loc_ba dinh | doi can,6.528004142386052e-05
+ward_loc_ha dong | la khe,6.513171783727895e-05
+ward_loc_dong da | cat linh,6.506188270306278e-05
+ward_loc_hoan kiem | hang ma,6.322548605330102e-05
+ward_loc_long bien | ngoc lam,6.186113046942449e-05
+ward_loc_gia lam | kieu ky,6.047638689369363e-05
+ward_loc_ba dinh | ngoc ha,6.037183992971972e-05
+ward_loc_cau giay | unknown,5.9703271556315745e-05
+ward_loc_thanh xuan | liet,5.9582500143109416e-05
+ward_loc_thanh tri | dong my,5.9218870035833364e-05
+ward_loc_ha dong | mo lao,5.8933977710098706e-05
+ward_loc_ha dong | duong noi,5.673334843445084e-05
+district_key_thuong tin,5.5918529090696144e-05
+ward_loc_dong da | khuong thuong,5.4857905511955295e-05
+ward_loc_nam tu liem | dai mo,5.406827570953438e-05
+ward_loc_dong anh | kim chung,5.32668868242727e-05
+ward_loc_ba dinh | quan thanh,5.003213825972034e-05
+ward_loc_hoang mai | dai kim,4.996762827712787e-05
+ward_loc_hoan kiem | cua dong,4.816492978947009e-05
+ward_loc_ba dinh | giang vo,4.7719968370911604e-05
+ward_loc_tay ho | tu lien,4.747411395641516e-05
+house_direction_Bắc,4.704637563502669e-05
+ward_loc_hai ba trung | vinh tuy,4.693544078045067e-05
+ward_loc_ha dong | unknown,4.692706178597488e-05
+ward_loc_thanh xuan | thanh xuan trung,4.5460099507882554e-05
+ward_loc_hoang mai | tuong mai,4.5372718329605507e-05
+ward_loc_hai ba trung | thanh nhan,4.223821359316902e-05
+ward_loc_ba dinh | vinh phuc,4.1669985404471e-05
+ward_loc_dong da | kham thien,4.015096756099163e-05
+ward_loc_bac tu liem | co nhue 2,3.9368877735108296e-05
+ward_loc_bac tu liem | dong ngac,3.933721545665182e-05
+ward_loc_hoai duc | song phuong,3.908831375731063e-05
+ward_loc_hai ba trung | thanh luong,3.872033382766078e-05
+ward_loc_dong da | quang trung,3.8499237016645695e-05
+ward_loc_hai ba trung | le dai hanh,3.696550658170461e-05
+ward_loc_thanh tri | ngoc hoi,3.692803074027835e-05
+ward_loc_thanh xuan | ha dinh,3.516173088690228e-05
+ward_loc_dong da | nam dong,3.510942048371556e-05
+district_key_dan phuong,3.4429889750604796e-05
+ward_loc_hoang mai | giap bat,3.389203817891561e-05
+ward_loc_long bien | phuc dong,3.377930706110282e-05
+ward_loc_dong da | kim lien,3.3184186458364664e-05
+ward_loc_chuong my | chuc son,3.285873087233846e-05
+ward_loc_nam tu liem | canh,3.276484368957281e-05
+ward_loc_hai ba trung | pho hue,3.130120487284571e-05
+ward_loc_hai ba trung | truong dinh,3.115836725591294e-05
+ward_loc_long bien | gia thuy,3.102619542067164e-05
+ward_loc_nam tu liem | unknown,3.001429051475245e-05
+ward_loc_hai ba trung | dong tam,3.000949442841117e-05
+ward_loc_hoan kiem | tran hung dao,2.9428398448177396e-05
+ward_loc_bac tu liem | tay tuu,2.86544324679618e-05
+ward_loc_hoang mai | thinh liet,2.6685688816524438e-05
+ward_loc_thanh tri | tu hiep,2.6337053456821525e-05
+ward_loc_hoang mai | hoang liet,2.55339623196378e-05
+ward_loc_hoang mai | unknown,2.466011649727259e-05
+ward_loc_hai ba trung | dong nhan,2.328485669008527e-05
+ward_loc_dong da | van chuong,2.2480936197573676e-05
+ward_loc_hai ba trung | bach dang,2.2085195367805913e-05
+ward_loc_bac tu liem | co nhue 1,2.158656654478141e-05
+ward_loc_dong da | hang bot,2.124683112005084e-05
+ward_loc_hoai duc | di trach,2.1238367954624258e-05
+ward_loc_ba dinh | ngoc khanh,2.033813352973686e-05
+ward_loc_hoan kiem | chuong duong,2.009983286357515e-05
+ward_loc_nam tu liem | me tri,1.9750919138375374e-05
+ward_loc_nam tu liem | phu do,1.973846064933535e-05
+ward_loc_thanh tri | unknown,1.920264891124586e-05
+ward_loc_thanh tri | huu hoa,1.8211291342605046e-05
+ward_loc_long bien | duc giang,1.8091310678651615e-05
+ward_loc_dong da | mai,1.7406916539051234e-05
+ward_loc_ha dong | phu la,1.7377123752833186e-05
+ward_loc_ba dinh | phuc xa,1.6525182820933975e-05
+ward_loc_nam tu liem | trung van,1.6373970310821058e-05
+ward_loc_hoang mai | thanh tri,1.612185992429835e-05
+ward_loc_ha dong | phuc la,1.4455525101043969e-05
+ward_loc_ba dinh | dien bien,1.3831146895795782e-05
+ward_loc_thanh xuan | thuong dinh,1.3621847720716832e-05
+ward_loc_hoai duc | la phu,1.3486855479926057e-05
+ward_loc_thanh tri | ngu hiep,1.336144359502335e-05
+ward_loc_bac tu liem | thuy phuong,1.3319958020104698e-05
+ward_loc_hoan kiem | cua nam,1.1362009528701969e-05
+ward_loc_dong da | lien trung tu,1.0692445688291e-05
+ward_loc_thanh tri | van dien,1.0681712830112023e-05
+ward_loc_ba dinh | thanh cong,1.0504887316824606e-05
+ward_loc_hoang mai | mai dong,1.034009352268665e-05
+ward_loc_gia lam | bat trang,1.0176974500139303e-05
+ward_loc_thanh xuan | unknown,1.0096436007756791e-05
+ward_loc_hoang mai | yen so,1.003628272904107e-05
+ward_loc_long bien | giang bien,9.991195565666993e-06
+ward_loc_bac tu liem | duc thang,9.436713074867526e-06
+ward_loc_dong anh | dong anh,8.903331118079986e-06
+ward_loc_thanh tri | tam hiep,8.578237968074399e-06
+ward_loc_gia lam | co bi,4.782937872076246e-06
+ward_loc_hoang mai | tran phu,4.595823911248248e-06
+ward_loc_bac tu liem | unknown,4.1959427792312665e-06
+ward_loc_hoai duc | tram troi,3.6041266866694016e-06
+ward_loc_dong da | tho quan,2.279607732392039e-06
+ward_loc_tay ho | unknown,1.956847494973365e-06
+ward_loc_bac tu liem | phuc dien,1.4975176024345533e-06
+ward_loc_hai ba trung | quynh mai,2.60046866385968e-08

@@ -1,92 +1,76 @@
-# Dự đoán giá bất động sản dựa trên đặc điểm nhà ở
+# Dự đoán giá nhà Hà Nội — Học máy, Nhóm 02
 
-Dự án môn Học máy, học kỳ 1 năm học 2026–2027. Bộ nộp **KT1, KT2 và KT3** gồm dữ liệu, mã nguồn, ba notebook đã chạy, báo cáo LaTeX/PDF, mô hình và demo CLI.
+Đề tài: **Dự báo bất động sản dựa trên đặc điểm nhà ở** — hồi quy tuyến tính có chính quy hoá (Ridge, Lasso, Elastic Net), đối chiếu Random Forest và Gradient Boosting.
+Thành viên: Trần Văn Dưỡng, Đặng Hoàng An. Báo cáo: [`Nhóm 2.docx`](Nhóm%202.docx) (bản PDF: [`Nhóm 2.pdf`](Nhóm%202.pdf)). Mã nguồn: <https://github.com/AnDpTri/hoc-may-gia-nha-ha-noi>.
 
-## Mở kết quả
+## Dữ liệu
+- Nguồn: [`tinixai/vietnam-real-estates`](https://huggingface.co/datasets/tinixai/vietnam-real-estates) (Hugging Face, giấy phép CC BY-NC 4.0 — chỉ dùng phi thương mại, ghi công TiniX AI).
+- Phạm vi: tin **bán nhà riêng / nhà phố tại Hà Nội**, đăng 6/2025 – 3/2026.
+- Sau làm sạch: **390.169 tin** — train 312.092 / test 78.077 (chia ngẫu nhiên 80/20, seed 42, gán ngay sau bước khử trùng lặp; thống kê lọc ngoại lai theo phường chỉ học từ tập train).
+- Biến mục tiêu: `log(giá)`; 17 đặc trưng gốc (6 số, 7 cờ văn bản, 4 phân loại) — xem `data_processed/feature_config.json` và từ điển dữ liệu `survey/10_tu_dien_du_lieu.csv`.
 
-- [Báo cáo tổng hợp PDF](reports/Bao_cao_KT1_KT2_KT3.pdf)
-- [Bộ nguồn LaTeX để tải lên Overleaf](reports/Bao_cao_KT1_KT2_KT3_LaTeX.zip)
-- [Nguồn LaTeX chỉnh sửa được](reports/latex_full/main.tex)
-- [KT1 khảo sát và tiền xử lý](notebooks/01_KT1_Ames_Housing.ipynb)
-- [KT2 huấn luyện và đánh giá](notebooks/02_KT2_Train_Evaluate.ipynb)
-- [KT3 tối ưu và cải tiến](notebooks/03_KT3_Tuning_Improvement.ipynb)
-- [Bản Word riêng KT1](reports/Bao_cao_KT1_Du_doan_gia_nha.docx)
-
-## Kết quả thực nghiệm
-
-Ames gốc có 2.930 dòng × 82 cột; dùng 77 đầu vào, sau mã hóa có 350 cột. Train 2006–2009 gồm 2.589 mẫu; test 2010 gồm 341 mẫu. Ba fold CV mở rộng theo năm, **fit lại toàn pipeline trong mỗi fold**.
-
-| Nội dung | Kết quả |
-|---|---:|
-| Mô hình cuối chọn theo CV | Lasso_tuned alpha=0.0003 |
-| RMSE log CV mean ± std mẫu | 0.12719 ± 0.00977 |
-| RMSE log test | 0.15095 |
-| MAE test USD | 14,840.28 |
-| R² test | 0.91893 |
-| Giảm RMSE log test so với baseline | 63.88% |
-
-KT2 so sánh DummyMeanLog, OLS, Ridge, Lasso và Elastic Net. KT3 có grid search, bảy đặc trưng mới, ablation clip/log và đối chứng HistGradientBoosting. Đặc trưng mới chưa vượt cấu hình gốc; bỏ clipping làm kết quả kém ổn định. Không chọn lại theo test: Lasso được giữ dù một số cấu hình khác có test log thấp hơn đôi chút. Chênh lệch giữa các mô hình regularization nhỏ so với biến động theo năm.
-
-[Kết quả đầy đủ](reports/experiments) gồm từng fold, mọi ứng viên grid, lựa chọn khóa trước test, lỗi từng mẫu và tầm quan trọng hoán vị. Ví dụ RidgeCV/LassoCV dùng preprocessing đóng băng năm 2006 để không nhìn các fold validation; bảng chính dùng GridSearchCV trên toàn pipeline.
-
-## Cài và chạy
-
-Dùng Python 3.11, mở PowerShell từ gốc repo:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-
-# Tái tạo KT1 KT2 KT3, notebook, nguồn LaTeX và kiểm tra
-.\.venv\Scripts\python.exe -m src.run_all
-
-# Demo từ model đã lưu, không huấn luyện lại
-.\.venv\Scripts\python.exe -m src.predict --example
-.\.venv\Scripts\python.exe -m src.predict --input examples\house.json --output work\predictions.csv
-
-# Kiểm tra
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-```
-
-Chạy toàn bộ mất vài phút tùy máy. Dữ liệu raw đi kèm nên huấn luyện không cần mạng. Mở notebook bằng VS Code + Python/Jupyter và chọn `.venv`. Notebook KT2/KT3 đọc bảng đã lưu và có ô demo trên train, không tự chấm lại test mỗi lần mở.
-
-Chạy riêng: `python -m src.kt1`, `python -m src.experiments`, `python -m src.plots`. Word KT1 có sẵn; muốn tạo lại cần cài thêm `python-docx` rồi chạy `python docs/build_report.py`.
-
-## LaTeX
-
-Trên Overleaf chọn **New project → Existing project (.zip)**, tải `reports/Bao_cao_KT1_KT2_KT3_LaTeX.zip`, mở `main.tex` và Recompile. Có đủ ảnh, hỗ trợ pdfLaTeX/T5 hoặc XeLaTeX/fontspec. Không cần tải dataset/Python lên Overleaf.
-
-Nếu có TeX cục bộ:
-
-```powershell
-Set-Location reports\latex_full
-xelatex main.tex
-xelatex main.tex
-```
-
-Nguồn được kiểm tra bằng Tectonic 0.17.0; engine không kèm repo. `run_all` tạo nguồn LaTeX, không tự cài TeX hoặc biên dịch PDF. PDF đã biên dịch được lưu sẵn.
-
-## Cấu trúc
-
-| Thư mục | Nội dung |
+## Cấu trúc thư mục
+| Đường dẫn | Nội dung |
 |---|---|
-| data/raw | TSV và tài liệu gốc giữ nguyên bytes |
-| data/processed | Split và ma trận KT1; không dùng ma trận đã fit cả train để CV |
-| src | Tiền xử lý, mô hình, thực nghiệm, hình và CLI |
-| notebooks | Ba notebook đã chạy |
-| reports/experiments | Kết quả chi tiết, dự đoán, grid, lỗi |
-| reports/latex_full | Nguồn báo cáo tổng hợp và ảnh |
-| models | Model cuối, model card |
-| tests | Kiểm tra leakage, fold, schema, inference và hash |
-| docs | Ôn vấn đáp, đối chiếu tiêu chí và các builder |
+| `01_tien_xu_ly_gia_nha_ha_noi(last).ipynb` | Tải dữ liệu, lọc Hà Nội + loại hình, parse giá, khử trùng lặp, lọc ngoại lai, tạo đặc trưng, chia train/test |
+| `01b_bo_sung_khao_sat_chat_luong_du_lieu.ipynb` | Bảng chất lượng dữ liệu, so sánh trước – sau, phân bố và quan hệ đặc trưng – giá |
+| `02_huan_luyen_mo_hinh.ipynb` | Huấn luyện 4 mô hình tuyến tính + Random Forest, chọn α, đường đi hệ số, thí nghiệm kích thước dữ liệu |
+| `04_danh_gia_bo_sung_va_cai_tien.ipynb` | Baseline, kiểm định chéo 5-fold, phần dư, so sánh cách chia, Target Encoding, Gradient Boosting, tối ưu siêu tham số, ablation |
+| `03_demo_dinh_gia_nha.ipynb` | Demo Gradio |
+| `data_processed/` | Dữ liệu thô đã lọc, dữ liệu sạch, `train.parquet`, `test.parquet`, cấu hình đặc trưng |
+| `models/` | Các mô hình đã huấn luyện (`.joblib`) và `demo_meta.json` |
+| `results/`, `survey/`, `figures/` | Bảng kết quả, bảng khảo sát, hình vẽ dùng trong báo cáo |
 
-## Trước khi nộp
+## Cài đặt (chạy trên máy)
+Yêu cầu Python 3.11 – 3.13.
 
-- [Nguồn và điều kiện dữ liệu](data/SOURCES.md), [từ điển 82 cột](docs/data_dictionary.csv).
-- [Đối chiếu KT1](docs/DOI_CHIEU_TIEU_CHI.md), [KT2 KT3](docs/DOI_CHIEU_KT2_KT3.md).
-- [Ôn KT1](docs/ON_TAP_VAN_DAP.md), [ôn KT2 KT3](docs/ON_TAP_KT2_KT3.md).
-- [Thông tin và nhật ký](docs/NHAT_KY_DONG_GOP.md).
+```bash
+python -m venv .venv
+```
 
-AI hỗ trợ tạo mã/tài liệu, đã khai báo trong báo cáo. Sinh viên điền họ tên, MSSV, lớp, giảng viên; tự kiểm tra, hiểu và ghi phần việc thực sự. Không tự tạo lịch sử đóng góp nhiều tuần. Phần vấn đáp và thực hành cá nhân phải do sinh viên thực hiện.
+```bash
+.venv\Scripts\activate
+```
 
-Dữ liệu thuộc Ames, Iowa 2006–2010, đơn vị USD và ft²; không đại diện thị trường Việt Nam hoặc hiện tại. Repo private mặc định; khi nộp cần cấp quyền phù hợp cho giảng viên.
+```bash
+pip install -r requirements.txt
+```
+
+`scikit-learn` phải đúng **1.6.1** — các mô hình trong `models/` được lưu bằng phiên bản này.
+
+Mở notebook bằng Jupyter (hoặc VS Code) **tại thư mục gốc dự án**:
+
+```bash
+jupyter notebook
+```
+
+Notebook tự nhận thư mục dự án: biến môi trường `ML_PROJECT_DIR` (nếu đặt) → Google Drive khi chạy trên Colab (`MyDrive/ML_house_price`) → thư mục gốc dự án khi chạy trên máy (nơi có `requirements.txt`). Không cần sửa đường dẫn.
+
+## Thứ tự chạy
+Thời gian đo khi chạy lại trên máy CPU 12 luồng, RAM 16 GB (Colab CPU chậm hơn khoảng 2–3 lần):
+
+| Bước | Notebook | Thời gian | Ghi chú |
+|---|---|---|---|
+| 1 | 01 | ~3 phút (+ tải ~1,7 GB lần đầu) | Tải dữ liệu từ Hugging Face vào `raw_parquet/`. Có thể **bỏ qua** vì `data_processed/` đã có sẵn kết quả |
+| 2 | 01b | ~1 phút | Đọc `data_processed/`, kiểm tra tái lập đúng số dòng của 01 |
+| 3 | 02 | ~8–10 phút | Tạo các mô hình tuyến tính, Random Forest và `demo_meta.json` |
+| 4 | 04 | ~12 phút | Đọc α từ mô hình của 02; ghi `results/04/`, `figures/04/`, `models/gradient_boosting.joblib`; kiểm tra tin gần trùng train–test |
+| 5 | 03 | ~1 phút | Mở demo; ô cuối in đường dẫn web (trên Colab tạo thêm link công khai) |
+
+Nên đóng các chương trình nặng khác khi chạy 02 (cần khoảng 4–6 GB RAM trống).
+
+Mọi bước ngẫu nhiên cố định `SEED = 42`.
+
+## Kết quả chính (tập kiểm tra)
+| Mô hình | MAPE CV 5-fold (%) | MAPE test (%) | MdAPE test (%) | MAE test (tỷ) |
+|---|---|---|---|---|
+| Baseline: đơn giá quận × diện tích | 28,40 ± 0,14 | 28,45 | 22,88 | 5,74 |
+| Lasso | 22,43 ± 0,08 | 22,44 | 17,20 | 4,46 |
+| Random Forest (tối ưu) | 20,99 ± 0,19 | 20,97 | 15,03 | 4,14 |
+| **Gradient Boosting (tối ưu)** | **18,49 ± 0,11** | **18,39** | **13,44** | **3,64** |
+
+Bảng đầy đủ: `results/04/bang_so_sanh_cuoi.csv`.
+
+## Ghi chú
+- Notebook 01 ghi thêm bản CSV `data_processed/02_hanoi_nhapho_clean.csv` (137 MB, vượt giới hạn GitHub) — không đưa vào kho; bản `.parquet` cùng nội dung có sẵn. Dữ liệu gốc (~1,7 GB) cũng không đưa vào kho, notebook 01 tự tải lại từ Hugging Face.
+- `requirements_runtime.txt` là danh sách phiên bản được notebook 04 tự ghi lại trong môi trường đã tạo kết quả hiện tại.

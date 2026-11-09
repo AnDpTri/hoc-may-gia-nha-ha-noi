@@ -1,0 +1,39 @@
+﻿cot,kieu,vai_tro,mo_ta,thieu_%
+date,datetime64[ns],thông tin,Ngày đăng,0.27
+post_month,object,thông tin,Tháng đăng,0.27
+title,object,thông tin,,0.0
+district,object,thông tin,,0.0
+ward,object,thông tin,,12.4
+street,object,thông tin,,17.6
+district_key,object,categorical,"Quận/huyện (cũ, đã chuẩn hoá khoá)",0.0
+ward_key,object,thông tin,"Phường/xã (cũ, khoá)",12.4
+ward_new,object,categorical,Phường/xã theo đơn vị hành chính mới,0.0
+price_raw,object,thông tin,Giá gốc trong dữ liệu (chuỗi),0.0
+price,float64,thông tin,Giá rao bán (VND) sau parse & sửa đơn vị,0.0
+area,float64,thông tin,Diện tích (m²),0.0
+unit_price,float64,thông tin,Đơn giá VND/m² (chỉ khảo sát),0.0
+log_price,float64,target,Biến mục tiêu: log(giá VND),0.0
+log_unit_price,float64,thông tin,log(đơn giá) (chỉ khảo sát),0.0
+floor_count,float64,numeric,Số tầng,52.77
+bedroom_count,float64,numeric,Số phòng ngủ,37.49
+bathroom_count,float64,numeric,Số phòng vệ sinh,44.66
+frontage_width,float64,numeric,Mặt tiền (m),39.92
+house_depth,float64,thông tin,Chiều sâu (m),98.98
+road_width,float64,numeric,Độ rộng đường/ngõ trước nhà (m),79.08
+lat,float64,thông tin,,100.0
+lon,float64,thông tin,,100.0
+dist_center_km,float64,thông tin,Khoảng cách tới Hồ Gươm (km),100.0
+log_dist_center,float64,thông tin,log(1 + khoảng cách),100.0
+log_area,float64,numeric,log(diện tích),0.0
+depth_frontage_ratio,float64,thông tin,Chiều sâu / mặt tiền,98.98
+floor_area_est,float64,thông tin,Diện tích sàn ước tính (m²),52.77
+road_type,object,categorical,Loại đường: ngõ nhỏ <3m / ngõ ô tô 3–6m / đường lớn ≥6m / unknown,0.0
+house_direction,object,categorical,Hướng nhà (8 hướng + Không rõ),0.0
+has_so_do,int8,binary,Cờ: có sổ đỏ/sổ hồng,0.0
+car_access,int8,binary,Cờ: ô tô vào/đỗ cửa,0.0
+is_mat_pho,int8,binary,Cờ: mặt phố/mặt đường,0.0
+kinh_doanh,int8,binary,Cờ: kinh doanh được,0.0
+lo_goc,int8,binary,Cờ: lô góc/2 mặt thoáng,0.0
+no_hau,int8,binary,Cờ: nở hậu,0.0
+thang_may,int8,binary,Cờ: có thang máy,0.0
+split,object,thông tin,train/test,0.0

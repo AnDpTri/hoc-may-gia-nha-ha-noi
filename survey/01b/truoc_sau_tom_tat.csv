@@ -1,0 +1,11 @@
+﻿,"Trước (đã parse, chưa lọc)",Sau xử lý
+số tin,549408.0,390169.0
+giá trung vị (tỷ),12.3,12.4
+giá trung bình (tỷ),34.2157,18.0995
+giá max (tỷ),2424000.0,300.0
+độ lệch (skew) của giá,469.0704,5.5113
+skew của log(giá),0.7767,0.796
+diện tích trung vị,49.0,49.0
+diện tích max,50500.0,1000.0
+% thiếu số tầng,55.1497,52.7697
+% thiếu mặt tiền,40.6048,39.9199

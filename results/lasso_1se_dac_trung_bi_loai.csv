@@ -1,0 +1,147 @@
+﻿đặc trưng,nhóm,hệ số
+district_key_dan phuong,quận,-0.0
+district_key_phuc tho,quận,-0.0
+district_key_thanh tri,quận,-0.0
+district_key_infrequent_sklearn,quận,-0.0
+ward_loc_ba dinh | giang vo,phường,0.0
+ward_loc_ba dinh | kim ma,phường,-0.0
+ward_loc_ba dinh | ngoc khanh,phường,0.0
+ward_loc_ba dinh | thanh cong,phường,0.0
+ward_loc_bac tu liem | dong ngac,phường,0.0
+ward_loc_bac tu liem | duc thang,phường,-0.0
+ward_loc_bac tu liem | phuc dien,phường,0.0
+ward_loc_bac tu liem | tay tuu,phường,-0.0
+ward_loc_bac tu liem | thuong cat,phường,-0.0
+ward_loc_bac tu liem | thuy phuong,phường,-0.0
+ward_loc_bac tu liem | unknown,phường,0.0
+ward_loc_bac tu liem | xuan tao,phường,0.0
+ward_loc_cau giay | nghia do,phường,0.0
+ward_loc_cau giay | yen hoa,phường,-0.0
+ward_loc_chuong my | chuc son,phường,0.0
+ward_loc_chuong my | phung chau,phường,-0.0
+ward_loc_chuong my | thuy huong,phường,-0.0
+ward_loc_chuong my | unknown,phường,0.0
+ward_loc_chuong my | xuan mai,phường,-0.0
+ward_loc_dan phuong | dan phuong,phường,-0.0
+ward_loc_dan phuong | phung,phường,-0.0
+ward_loc_dan phuong | tan hoi,phường,-0.0
+ward_loc_dan phuong | tan lap,phường,-0.0
+ward_loc_dan phuong | unknown,phường,-0.0
+ward_loc_dong anh | bac hong,phường,-0.0
+ward_loc_dong anh | dai mach,phường,-0.0
+ward_loc_dong anh | dong anh,phường,0.0
+ward_loc_dong anh | dong hoi,phường,0.0
+ward_loc_dong anh | duc tu,phường,-0.0
+ward_loc_dong anh | hai boi,phường,-0.0
+ward_loc_dong anh | kim chung,phường,-0.0
+ward_loc_dong anh | kim no,phường,0.0
+ward_loc_dong anh | lien ha,phường,-0.0
+ward_loc_dong anh | mai lam,phường,0.0
+ward_loc_dong anh | nam hong,phường,-0.0
+ward_loc_dong anh | nguyen khe,phường,-0.0
+ward_loc_dong anh | tien duong,phường,-0.0
+ward_loc_dong anh | unknown,phường,-0.0
+ward_loc_dong anh | uy no,phường,0.0
+ward_loc_dong anh | van noi,phường,-0.0
+ward_loc_dong anh | vinh ngoc,phường,0.0
+ward_loc_dong anh | vong la,phường,-0.0
+ward_loc_dong anh | xuan non,phường,-0.0
+ward_loc_dong da | cat linh,phường,0.0
+ward_loc_dong da | hang bot,phường,-0.0
+ward_loc_dong da | kim lien,phường,0.0
+ward_loc_dong da | lien trung tu,phường,-0.0
+ward_loc_dong da | mai,phường,0.0
+ward_loc_dong da | nam dong,phường,0.0
+ward_loc_dong da | quang trung,phường,-0.0
+ward_loc_dong da | tho quan,phường,-0.0
+ward_loc_dong da | unknown,phường,0.0
+ward_loc_gia lam | bat trang,phường,0.0
+ward_loc_gia lam | co bi,phường,0.0
+ward_loc_gia lam | da ton,phường,-0.0
+ward_loc_gia lam | dang xa,phường,-0.0
+ward_loc_gia lam | duong xa,phường,-0.0
+ward_loc_gia lam | kieu ky,phường,-0.0
+ward_loc_gia lam | phu dong,phường,-0.0
+ward_loc_gia lam | unknown,phường,-0.0
+ward_loc_gia lam | yen vien,phường,-0.0
+ward_loc_ha dong | ha cau,phường,0.0
+ward_loc_ha dong | phuc la,phường,0.0
+ward_loc_ha dong | unknown,phường,0.0
+ward_loc_hai ba trung | bach dang,phường,0.0
+ward_loc_hai ba trung | quynh mai,phường,-0.0
+ward_loc_hai ba trung | unknown,phường,-0.0
+ward_loc_hoai duc | an khanh,phường,0.0
+ward_loc_hoai duc | an thuong,phường,-0.0
+ward_loc_hoai duc | duc giang,phường,-0.0
+ward_loc_hoai duc | duc thuong,phường,-0.0
+ward_loc_hoai duc | la phu,phường,-0.0
+ward_loc_hoai duc | lai yen,phường,-0.0
+ward_loc_hoai duc | son dong,phường,-0.0
+ward_loc_hoai duc | song phuong,phường,-0.0
+ward_loc_hoai duc | tram troi,phường,0.0
+ward_loc_hoai duc | unknown,phường,-0.0
+ward_loc_hoan kiem | cua dong,phường,0.0
+ward_loc_hoan kiem | cua nam,phường,-0.0
+ward_loc_hoan kiem | dong xuan,phường,-0.0
+ward_loc_hoan kiem | hang bac,phường,0.0
+ward_loc_hoan kiem | hang bai,phường,0.0
+ward_loc_hoan kiem | hang bo,phường,0.0
+ward_loc_hoan kiem | hang bong,phường,0.0
+ward_loc_hoan kiem | hang buom,phường,0.0
+ward_loc_hoan kiem | hang dao,phường,0.0
+ward_loc_hoan kiem | hang gai,phường,0.0
+ward_loc_hoan kiem | hang ma,phường,0.0
+ward_loc_hoan kiem | hang trong,phường,0.0
+ward_loc_hoan kiem | ly thai to,phường,0.0
+ward_loc_hoan kiem | phan chu trinh,phường,-0.0
+ward_loc_hoan kiem | tran hung dao,phường,-0.0
+ward_loc_hoan kiem | trang tien,phường,0.0
+ward_loc_hoang mai | hoang liet,phường,-0.0
+ward_loc_hoang mai | mai dong,phường,0.0
+ward_loc_hoang mai | tran phu,phường,-0.0
+ward_loc_hoang mai | yen so,phường,-0.0
+ward_loc_long bien | duc giang,phường,-0.0
+ward_loc_long bien | giang bien,phường,-0.0
+ward_loc_long bien | unknown,phường,-0.0
+ward_loc_long bien | viet hung,phường,0.0
+ward_loc_me linh | quang minh,phường,-0.0
+ward_loc_me linh | tien phong,phường,-0.0
+ward_loc_nam tu liem | phu do,phường,0.0
+ward_loc_nam tu liem | unknown,phường,-0.0
+ward_loc_quoc oai | hung dao,phường,-0.0
+ward_loc_quoc oai | quoc oai,phường,-0.0
+ward_loc_quoc oai | unknown,phường,-0.0
+ward_loc_soc son | mai dinh,phường,-0.0
+ward_loc_soc son | phu lo,phường,0.0
+ward_loc_soc son | quang tien,phường,-0.0
+ward_loc_tay ho | unknown,phường,-0.0
+ward_loc_tay ho | xuan la,phường,-0.0
+ward_loc_tay ho | yen phu,phường,0.0
+ward_loc_thach that | tan xa,phường,-0.0
+ward_loc_thanh oai | bich hoa,phường,-0.0
+ward_loc_thanh oai | binh minh,phường,-0.0
+ward_loc_thanh oai | cao vien,phường,-0.0
+ward_loc_thanh oai | cu khe,phường,0.0
+ward_loc_thanh oai | unknown,phường,-0.0
+ward_loc_thanh tri | dai ang,phường,-0.0
+ward_loc_thanh tri | huu hoa,phường,-0.0
+ward_loc_thanh tri | lien ninh,phường,-0.0
+ward_loc_thanh tri | ngoc hoi,phường,-0.0
+ward_loc_thanh tri | ngu hiep,phường,-0.0
+ward_loc_thanh tri | unknown,phường,-0.0
+ward_loc_thanh tri | van phuc,phường,-0.0
+ward_loc_thanh tri | yen my,phường,-0.0
+ward_loc_thanh xuan | ha dinh,phường,0.0
+ward_loc_thanh xuan | khuong trung,phường,0.0
+ward_loc_thanh xuan | thanh xuan bac,phường,-0.0
+ward_loc_thanh xuan | thanh xuan trung,phường,0.0
+ward_loc_thanh xuan | thuong dinh,phường,-0.0
+ward_loc_thanh xuan | unknown,phường,-0.0
+ward_loc_thuong tin | duyen thai,phường,-0.0
+ward_loc_thuong tin | khanh ha,phường,-0.0
+ward_loc_thuong tin | nhi khe,phường,-0.0
+ward_loc_thuong tin | thuong tin,phường,-0.0
+ward_loc_thuong tin | van binh,phường,-0.0
+house_direction_Bắc,hướng nhà,0.0
+house_direction_Tây,hướng nhà,0.0
+house_direction_Tây Nam,hướng nhà,0.0

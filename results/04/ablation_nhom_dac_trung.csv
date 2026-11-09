@@ -1,0 +1,8 @@
+﻿mô hình,MAPE val (%),Δ MAPE so với đầy đủ (điểm %)
+Đầy đủ,22.43 ± 0.08,0.0
+− cờ văn bản (7 cờ),24.24 ± 0.12,1.81
+− phường (chỉ giữ quận),24.23 ± 0.08,1.8
+− quận và phường (không có vị trí),29.16 ± 0.18,6.73
+− cờ thiếu dữ liệu (missing indicator),22.62 ± 0.08,0.19
+− hướng nhà & loại đường,22.62 ± 0.08,0.19
+− diện tích,36.95 ± 0.38,14.52

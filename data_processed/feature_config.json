@@ -1,0 +1,80 @@
+{
+  "dataset": "tinixai/vietnam-real-estates",
+  "scope": "Hà Nội – nhà riêng/nhà phố – tin bán",
+  "target": "log_price",
+  "num_features": [
+    "log_area",
+    "floor_count",
+    "bedroom_count",
+    "bathroom_count",
+    "frontage_width",
+    "road_width"
+  ],
+  "bin_features": [
+    "has_so_do",
+    "car_access",
+    "is_mat_pho",
+    "kinh_doanh",
+    "lo_goc",
+    "no_hau",
+    "thang_may"
+  ],
+  "cat_features": [
+    "ward_new",
+    "district_key",
+    "house_direction",
+    "road_type"
+  ],
+  "note": "Điền thiếu (median + indicator), StandardScaler, OneHotEncoder(min_frequency) làm trong sklearn Pipeline",
+  "dropped_num_features": [
+    "depth_frontage_ratio",
+    "house_depth",
+    "log_dist_center"
+  ],
+  "thresholds": {
+    "price": [
+      300000000.0,
+      300000000000.0
+    ],
+    "area": [
+      10,
+      1000
+    ],
+    "unit_price": [
+      5000000.0,
+      2000000000.0
+    ],
+    "plausible": {
+      "floor_count": [
+        1,
+        15
+      ],
+      "bedroom_count": [
+        1,
+        30
+      ],
+      "bathroom_count": [
+        1,
+        30
+      ],
+      "frontage_width": [
+        1,
+        50
+      ],
+      "house_depth": [
+        2,
+        200
+      ],
+      "road_width": [
+        0.5,
+        100
+      ]
+    },
+    "robust_z": 3.5,
+    "min_ward_n": 20
+  },
+  "split": {
+    "test_size": 0.2,
+    "seed": 42
+  }
+}

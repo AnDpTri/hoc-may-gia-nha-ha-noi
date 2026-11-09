@@ -1,4 +1,0 @@
-model,coefficients,nonzero
-Ridge_tuned,350,349
-Lasso_tuned,350,148
-ElasticNet_tuned,350,158
